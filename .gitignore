@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.env
+.env
+
+# SQLite DB
+*.db
+
+# uv files
+.uv/
+uv.lock
+
+# Docker
+*.log
