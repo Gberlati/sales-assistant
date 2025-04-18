@@ -8,6 +8,7 @@ app = FastAPI()
 @app.on_event("startup")
 async def startup_event():
     init_db()
+    await bot_app.initialize()
     await setup_telegram_webhook()
 
 @app.post("/webhook")
